@@ -17,8 +17,8 @@ gulp.task('html', function (){
 
 gulp.task('styles', function (){
   return gulp.src('./app/assets/styles/styles.css')
-  .pipe(postcss([cssImport,nested, cssVars,autoprefixer]))
-  .pipe(gulpdest('./app/assets/temp/styles'));
+  .pipe(postcss([cssImport,nested, cssVars, autoprefixer]))
+  .pipe(gulp.dest('./app/assets/temp/styles'));
 });
 
 // This will trigger several task that are listen within

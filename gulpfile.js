@@ -4,7 +4,8 @@ var gulp = require('gulp'),
     autoprefixer = require('autoprefixer'),
     cssVars = require('postcss-simple-vars'),
     nested = require('postcss-nested'),
-    cssImport = require('postcss-import');
+    cssImport = require('postcss-import')
+    browserSync = require('browser-sync');
 
 
 gulp.task('default', function(){

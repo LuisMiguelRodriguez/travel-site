@@ -5,8 +5,8 @@ var gulp = require('gulp'),
 gulp.task('watch', function(){
   //loads browser
   browserSync.init({
+    notify: false,
     server: {
-      notify: false,
       baseDir: "app"
     }
   });
@@ -15,6 +15,7 @@ gulp.task('watch', function(){
     // reloads the browser when index.html gets saved
     browserSync.reload();
   });
+
 
   watch('./app/assets/styles/**/*.css', function(){
     gulp.start('cssInject');

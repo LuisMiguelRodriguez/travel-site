@@ -13,6 +13,7 @@ gulp.task('watch', function(){
 
   watch('./app/index.html', function(){
     // reloads the browser when index.html gets saved
+    console.log('index.html has just been edited');
     browserSync.reload();
   });
 
